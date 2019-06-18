@@ -1,0 +1,16 @@
+{
+  "name": "@ui/layout",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "jest-emotion": "10.0.11",
+    "react": "16.8.6",
+    "react-test-renderer": "16.8.6"
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.10",
+    "@emotion/styled": "10.0.12",
+    "styled-system": "5.0.6"
+  }
+}
