@@ -1,0 +1,17 @@
+@import '~reset.css';
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+  background: #F2F2F2;
+  overflow-y: auto;
+}
