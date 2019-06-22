@@ -1,0 +1,19 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"],
+    "object-literal-sort-keys": false,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "member-access": false,
+    "ordered-imports": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "interface-name": false,
+    "no-unused-variable": true,
+    "arrow-parens": [true, "ban-single-arg-parens"]
+  },
+  "linterOptions": {
+    "exclude": ["**/node_modules/**"]
+  }
+}
