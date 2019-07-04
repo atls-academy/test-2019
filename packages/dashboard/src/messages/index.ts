@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl'
 
-export const namespace = '@au/dashboard'
+export const namespace = '@aunited/dashboard'
 
 export default defineMessages({
   header: {
