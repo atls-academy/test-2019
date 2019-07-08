@@ -7,7 +7,7 @@
     "typecheck:watch": "tsc --watch --noEmit",
     "typecheck": "tsc --noEmit",
     "test": "yarn jest",
-    "dashboard:dev": "yarn workspace @au/dashboard dev"
+    "dashboard:dev": "yarn workspace @aunited/dashboard dev"
   },
   "devDependencies": {
     "commitizen": "3.1.1",
