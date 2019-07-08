@@ -11,13 +11,21 @@ import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 export const mode = 'production'
 
 export const optimization = {
+  removeAvailableModules: false,
+  removeEmptyChunks: false,
   splitChunks: {
+    chunks: 'async',
+    minSize: 30000,
+    maxSize: 0,
+    minChunks: 1,
+    maxAsyncRequests: 5,
+    maxInitialRequests: 3,
+    name: true,
     cacheGroups: {
-      styles: {
-        name: 'styles',
-        test: /\.?[jc]ss$/,
-        chunks: 'all',
-        enforce: true,
+      default: {
+        minChunks: 2,
+        priority: -20,
+        reuseExistingChunk: true,
       },
     },
   },
