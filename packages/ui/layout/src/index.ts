@@ -9,7 +9,7 @@ const fill = (props: FillProps) =>
 const isNumber = n => typeof n === 'number' && !isNaN(n)
 const getWidth = (n, scale) =>
   get(scale, n, !isNumber(n) || n > 1 ? n : n * 100 + '%')
-const getScale = (n, scale) => scale[n] || getWidth(n, scale)
+const getScale = (n, scale) => (scale ? scale[n] : getWidth(n, scale))
 
 const flexBasis = style({
   prop: 'flexBasis',
