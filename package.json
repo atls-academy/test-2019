@@ -1,6 +1,9 @@
 {
   "name": "test-web",
   "private": true,
+  "scripts": {
+    "gateway:dev": "yarn workspace @aunited/gateway dev"
+  },
   "devDependencies": {
     "lerna": "3.15.0"
   }
