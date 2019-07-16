@@ -31,6 +31,11 @@ input UpdateProfileInput {
   lastName: String!
 }
 
+type PublicProfile {
+  firstName: String!
+  lastName: String!
+}
+
 type Mutation {
   register (input: RegisterUserInput!) : RegisterUserResponse!
   updateProfile (input: UpdateProfileInput!) : UpdateProfileResponse!
@@ -38,4 +43,5 @@ type Mutation {
 
 type Query {
   me: User!
+  publicProfile: PublicProfile!
 }

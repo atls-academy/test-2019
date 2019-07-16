@@ -3,6 +3,8 @@ import { GraphQLModule } from '@nestjs/graphql'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { UsersModule } from '@aunited/users'
 import { RolesModule } from '@aunited/roles'
+import { APP_GUARD } from '@nestjs/core'
+import { AccessGuard, ResourceGuard } from '@aunited/common'
 
 @Module({
   imports: [
@@ -36,7 +38,17 @@ import { RolesModule } from '@aunited/roles'
     }),
     UsersModule,
     RolesModule,
-  ]
+  ],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: AccessGuard,
+    },
+    {
+      provide: APP_GUARD,
+      useClass: ResourceGuard,
+    },
+  ],
 })
 export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
