@@ -1,4 +1,5 @@
 import { NestModule, MiddlewareConsumer, Module } from '@nestjs/common'
+import { GraphQLModule } from '@nestjs/graphql'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { UsersModule } from '@aunited/users'
 import { RolesModule } from '@aunited/roles'
@@ -21,9 +22,21 @@ import { RolesModule } from '@aunited/roles'
       synchronize: true,
       logging: false,
     }),
+    GraphQLModule.forRoot({
+      path: '/graphql',
+      typePaths: [
+        '../**/*.graphql',
+      ],
+      installSubscriptionHandlers: false,
+      rootValue: ({ req }) => req,
+      formatError: error => {
+        return error
+      },
+      playground: true,
+    }),
     UsersModule,
     RolesModule,
-  ],
+  ]
 })
 export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

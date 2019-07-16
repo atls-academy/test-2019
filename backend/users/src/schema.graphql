@@ -1,0 +1,41 @@
+type User {
+  id: ID!
+  email: String!
+}
+
+type RegisterUserErrors {
+  email: String
+  password: String
+}
+
+type RegisterUserResponse {
+  errors: RegisterUserErrors
+}
+
+input RegisterUserInput {
+  email: String!
+  password: String!
+}
+
+type UpdateProfileErrors {
+  firstName: String
+  lastName: String
+}
+
+type UpdateProfileResponse {
+  errors: UpdateProfileErrors
+}
+
+input UpdateProfileInput {
+  firstName: String!
+  lastName: String!
+}
+
+type Mutation {
+  register (input: RegisterUserInput!) : RegisterUserResponse!
+  updateProfile (input: UpdateProfileInput!) : UpdateProfileResponse!
+}
+
+type Query {
+  me: User!
+}
