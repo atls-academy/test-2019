@@ -2,9 +2,12 @@
   "name": "test-web",
   "private": true,
   "scripts": {
-    "gateway:dev": "yarn workspace @aunited/gateway dev"
+    "gateway:dev": "yarn workspace @aunited/gateway dev",
+    "typecheck": "lerna run typecheck",
+    "lint": "tslint --project tsconfig.json -c tslint.json -t codeFrame backend/**/*.ts"
   },
   "devDependencies": {
-    "lerna": "3.15.0"
+    "lerna": "3.15.0",
+    "tslint": "^5.17.0"
   }
 }

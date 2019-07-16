@@ -4,7 +4,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "nodemon --exec node -r ts-node/register --watch src src/index.ts"
+    "dev": "nodemon --exec node -r ts-node/register --watch src src/index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@nestjs/common": "6.3.1",
