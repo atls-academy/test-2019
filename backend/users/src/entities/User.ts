@@ -1,5 +1,6 @@
-import { PrimaryGeneratedColumn, Entity, Column, OneToOne } from 'typeorm'
+import { PrimaryGeneratedColumn, Entity, Column, OneToOne, ManyToOne, JoinColumn } from 'typeorm'
 import { Profile } from './Profile'
+import { Role } from '@aunited/roles/src/entities'
 
 @Entity()
 export class User {
@@ -11,4 +12,8 @@ export class User {
 
   @OneToOne(type => Profile)
   profile: Profile
+
+  @ManyToOne(type => Role)
+  @JoinColumn()
+  role: Role
 }

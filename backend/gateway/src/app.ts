@@ -1,6 +1,7 @@
 import { NestModule, MiddlewareConsumer, Module } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { UsersModule } from '@aunited/users'
+import { RolesModule } from '@aunited/roles'
 
 @Module({
   imports: [
@@ -21,7 +22,8 @@ import { UsersModule } from '@aunited/users'
       logging: false,
     }),
     UsersModule,
-  ]
+    RolesModule,
+  ],
 })
 export class ApplicationModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
