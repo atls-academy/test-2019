@@ -3,7 +3,8 @@ import { RegisterUserDto, UpdateProfileDto } from '../dto'
 import { CommandBus } from '@nestjs/cqrs'
 import { RegisterUserCommand } from '../commands/impl'
 import { Injectable } from '@nestjs/common'
-import { AuthAccess } from '@backend/common'
+import { ResourceAccess } from '@backend/common'
+import { ActionType, PossessionType } from '@backend/roles'
 
 @Injectable()
 export class UserMutations {
@@ -23,7 +24,7 @@ export class UserMutations {
     return {}
   }
 
-  @AuthAccess()
+  @ResourceAccess('profile', ActionType.update, PossessionType.own)
   @Mutation('updateProfile')
   async updateProfile(@Args('input') input: UpdateProfileDto) {
     throw new Error('To be implemented UserMutations.updateProfile (ノಥ,_｣ಥ)ノ彡┻━┻')

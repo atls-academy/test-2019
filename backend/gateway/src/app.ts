@@ -5,6 +5,7 @@ import { UsersModule } from '@backend/users'
 import { RolesModule } from '@backend/roles'
 import { APP_GUARD } from '@nestjs/core'
 import { AccessGuard, ResourceGuard } from '@backend/common'
+import { GraphQLDate, GraphQLTime, GraphQLDateTime } from 'graphql-iso-date'
 
 @Module({
   imports: [
@@ -30,6 +31,11 @@ import { AccessGuard, ResourceGuard } from '@backend/common'
         '../**/*.graphql',
       ],
       installSubscriptionHandlers: false,
+      resolvers: {
+        Date: GraphQLDate,
+        Time: GraphQLTime,
+        DateTime: GraphQLDateTime,
+      },
       rootValue: ({ req }) => req,
       formatError: error => {
         return error
