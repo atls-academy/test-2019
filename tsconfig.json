@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "pretty": true,
-    "target": "esnext",
+    "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
@@ -9,7 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowJs": true,
-    "lib": ["esnext"],
+    "lib": ["es6"],
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "preserveSymlinks": true,
