@@ -16,6 +16,7 @@
     "apollo-server-express": "2.6.3",
     "graphql": "14.3.1",
     "graphql-tools": "4.0.4",
+    "graphql-iso-date": "3.6.1",
     "reflect-metadata": "0.1.13",
     "typeorm": "0.2.18",
     "pg": "7.11.0"
