@@ -10,9 +10,18 @@ export class UserQueries {
     return {}
   }
 
-  @ResourceAccess('publicProfile', 'read')
+  @ResourceAccess('user', 'read')
   @Query()
-  async publicProfile(@Args('id') id: number) {
+  async user(@Args('id') id: number) {
     return {}
+  }
+
+  @ResourceAccess('user', 'read')
+  @Query()
+  users() {
+    return {
+      rows: [],
+      count: 0,
+    }
   }
 }

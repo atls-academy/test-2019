@@ -1,6 +1,14 @@
 type User {
   id: ID!
   email: String!
+  profile: Profile
+  registeredAt: DateTime
+  lastLogonAt: DeteTime
+}
+
+type Profile {
+  firstName: String!
+  lastName: String!
 }
 
 type RegisterUserErrors {
@@ -31,9 +39,9 @@ input UpdateProfileInput {
   lastName: String!
 }
 
-type PublicProfile {
-  firstName: String!
-  lastName: String!
+type UserList {
+  rows: [User]!
+  count: Int!
 }
 
 type Mutation {
@@ -43,5 +51,6 @@ type Mutation {
 
 type Query {
   me: User!
-  publicProfile: PublicProfile!
+  user (id: ID!) : User!
+  users : UserList!
 }
