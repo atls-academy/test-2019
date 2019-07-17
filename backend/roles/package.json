@@ -1,0 +1,17 @@
+{
+  "name": "@backend/roles",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.3.1",
+    "@nestjs/typeorm": "6.1.2",
+    "typeorm": "0.2.18"
+  },
+  "devDependencies": {
+    "@types/node": "12.0.8"
+  }
+}
