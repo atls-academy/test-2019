@@ -1,5 +1,5 @@
 {
-  "name": "@aunited/gateway",
+  "name": "@backend/gateway",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",

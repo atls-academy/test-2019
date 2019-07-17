@@ -1,10 +1,10 @@
 import { NestModule, MiddlewareConsumer, Module } from '@nestjs/common'
 import { GraphQLModule } from '@nestjs/graphql'
 import { TypeOrmModule } from '@nestjs/typeorm'
-import { UsersModule } from '@aunited/users'
-import { RolesModule } from '@aunited/roles'
+import { UsersModule } from '@backend/users'
+import { RolesModule } from '@backend/roles'
 import { APP_GUARD } from '@nestjs/core'
-import { AccessGuard, ResourceGuard } from '@aunited/common'
+import { AccessGuard, ResourceGuard } from '@backend/common'
 
 @Module({
   imports: [

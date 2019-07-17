@@ -1,5 +1,5 @@
 {
-  "name": "@aunited/roles",
+  "name": "@backend/roles",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",

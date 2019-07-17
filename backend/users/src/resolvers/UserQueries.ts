@@ -1,6 +1,6 @@
 import { Query, Args } from '@nestjs/graphql'
 import { Injectable } from '@nestjs/common'
-import { AuthAccess, ResourceAccess } from '@aunited/common'
+import { AuthAccess, ResourceAccess } from '@backend/common'
 
 @Injectable()
 export class UserQueries {

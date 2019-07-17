@@ -3,7 +3,7 @@ import { RegisterUserDto, UpdateProfileDto } from '../dto'
 import { CommandBus } from '@nestjs/cqrs'
 import { RegisterUserCommand } from '../commands/impl'
 import { Injectable } from '@nestjs/common'
-import { AuthAccess } from '@aunited/common'
+import { AuthAccess } from '@backend/common'
 
 @Injectable()
 export class UserMutations {
