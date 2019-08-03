@@ -3,12 +3,12 @@ import { defineMessages } from 'react-intl'
 export const namespace = '@aunited/dashboard'
 
 export default defineMessages({
-  header: {
-    id: `${namespace}.header`,
-    defaultMessage: 'Хедер',
+  exit: {
+    id: `${namespace}.exit`,
+    defaultMessage: 'Выйти',
   },
-  footer: {
-    id: `${namespace}.footer`,
-    defaultMessage: 'Футер',
+  copyright: {
+    id: `${namespace}.copyright`,
+    defaultMessage: 'Atlantis United',
   },
 })
