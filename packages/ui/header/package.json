@@ -1,0 +1,9 @@
+{
+  "name": "@ui/header",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "@emotion/styled": "^10.0.9"
+  }
+}
