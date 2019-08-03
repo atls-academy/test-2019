@@ -1,0 +1,9 @@
+{
+  "name": "@aunited/auth",
+  "version": "0.1.0",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "16.8.6",
+    "react-router-dom": "5.0.0"
+  }
+}
