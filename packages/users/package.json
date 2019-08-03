@@ -1,0 +1,13 @@
+{
+  "name": "@aunited/users",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "peerDependencies": {
+    "react": "16.8.6",
+    "react-router-dom": "5.0.0"
+  },
+  "dependencies": {
+    "recompose": "^0.30.0"
+  }
+}
