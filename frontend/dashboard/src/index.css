@@ -1,0 +1,49 @@
+@import '~reset.css';
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+  background: #F2F2F2;
+  overflow-y: auto;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../assets/fonts/SFUIText-Light.woff2') format('woff2'),
+  url('../assets/fonts/SFUIText-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../assets/fonts/SFUIText-Regular.woff2') format('woff2'),
+  url('../assets/fonts/SFUIText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../assets/fonts/SFUIText-Medium.woff2') format('woff2'),
+  url('../assets/fonts/SFUIText-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: url('../assets/fonts/SFUIText-Bold.woff2') format('woff2'),
+  url('../assets/fonts/SFUIText-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
