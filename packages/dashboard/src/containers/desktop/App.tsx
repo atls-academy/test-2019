@@ -1,7 +1,7 @@
 import React from 'react'
 import { Column, Layout } from '@ui/layout'
-import Header from '../../components/desktop/Header'
 import Footer from '../../components/desktop/Footer'
+import Header from './Header'
 
 const App = ({ children }) => (
   <Column fill>
