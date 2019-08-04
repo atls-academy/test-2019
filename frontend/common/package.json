@@ -1,0 +1,9 @@
+{
+  "name": "@frontend/common",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "redux-persist": "5.10.0"
+  }
+}
