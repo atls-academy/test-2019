@@ -1,2 +1,2 @@
-export const load = '@@aunited/me/LOAD'
-export const clear = '@@aunited/me/CLEAR'
+export const load = '@@frontend/me/LOAD'
+export const clear = '@@frontend/me/CLEAR'

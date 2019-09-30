@@ -1,3 +1,3 @@
-export const change = '@@aunited/auth/login/CHANGE'
-export const clear = '@@aunited/auth/login/CLEAR'
-export const setErrors = '@@aunited/auth/login/SET_ERRORS'
+export const change = '@@frontend/auth/login/CHANGE'
+export const clear = '@@frontend/auth/login/CLEAR'
+export const setErrors = '@@frontend/auth/login/SET_ERRORS'

@@ -20,7 +20,7 @@ export default persistReducer(
   {
     storage,
     key: 'token',
-    keyPrefix: 'aunited',
+    keyPrefix: 'frontend',
     version: 1,
   },
   reducer

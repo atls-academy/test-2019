@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl'
 
-export const namespace = '@aunited/users'
+export const namespace = '@frontend/users'
 
 export default defineMessages({
   users: {

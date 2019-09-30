@@ -1,2 +1,2 @@
-export const logout = '@@aunited/common/security/LOGOUT'
-export const auth = '@@aunited/common/security/AUTH'
+export const logout = '@@frontend/common/security/LOGOUT'
+export const auth = '@@frontend/common/security/AUTH'

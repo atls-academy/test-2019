@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { AuthDesktop as Auth } from '@aunited/auth'
-import { ListDesktop as Users } from '@aunited/users'
+import { AuthDesktop as Auth } from '@frontend/auth'
+import { ListDesktop as Users } from '@frontend/users'
 import App from './App'
 
 const Routes = () => (

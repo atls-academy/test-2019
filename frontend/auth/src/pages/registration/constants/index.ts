@@ -1,3 +1,3 @@
-export const change = '@@aunited/auth/registration/CHANGE'
-export const clear = '@@aunited/auth/registration/CLEAR'
-export const setErrors = '@@aunited/auth/registration/SET_ERRORS'
+export const change = '@@frontend/auth/registration/CHANGE'
+export const clear = '@@frontend/auth/registration/CLEAR'
+export const setErrors = '@@frontend/auth/registration/SET_ERRORS'

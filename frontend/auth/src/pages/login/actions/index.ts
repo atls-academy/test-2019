@@ -1,5 +1,5 @@
 import gql from 'graphql-tag'
-import { auth } from '@aunited/common/src/constants/security'
+import { auth } from '@frontend/common/src/constants/security'
 import * as actions from '../constants'
 import stub from './stub'
 
