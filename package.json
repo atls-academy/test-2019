@@ -15,5 +15,10 @@
     "hooks": {
       "pre-push": "yarn lint && yarn typecheck"
     }
-  }
+  },
+  "workspaces": [
+    "frontend/*",
+    "frontend/ui/*",
+    "frontend/utils/*"
+  ]
 }
