@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl'
 
-export const namespace = '@aunited/dashboard'
+export const namespace = '@frontend/dashboard'
 
 export default defineMessages({
   exit: {

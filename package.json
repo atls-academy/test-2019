@@ -11,6 +11,11 @@
     "tslint": "^5.17.0",
     "husky": "^2.4.1"
   },
+  "workspaces": [
+    "frontend/*",
+    "backend/*",
+    "frontend/ui/*"
+  ],
   "husky": {
     "hooks": {
       "pre-push": "yarn lint && yarn typecheck"

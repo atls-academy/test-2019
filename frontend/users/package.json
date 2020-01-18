@@ -8,6 +8,7 @@
     "react-router-dom": "5.0.0"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
     "recompose": "^0.30.0"
   }
 }
