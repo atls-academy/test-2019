@@ -2,7 +2,7 @@
   "name": "@utils/reducer",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "reducer/src/index.ts",
   "dependencies": {
     "redux": "^4.0.0"
   }
